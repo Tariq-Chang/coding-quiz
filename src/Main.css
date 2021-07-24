@@ -1,0 +1,117 @@
+.main{
+    background:var(--body);
+    color:white;
+    height:100vh;
+}
+
+.game__wrapper{
+    display:flex;
+    justify-content: center;
+}
+.game__container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height:50vh;
+    margin-top:30px;
+    font-size:1.3rem;
+}
+
+.game__questions{
+    background:rgb(195,195,195);
+    color:var(--header);
+    width:810px;
+    /* max-width:60vw; */
+    margin:20px 50px;
+    padding:10px;
+    /* min-width:400px; */
+}
+
+.game__options{
+    display:grid;
+    grid-template-areas:"opt1 opt2"
+                        "opt3 opt4";
+    gap:10px;
+    margin-top:20px;
+}
+
+.game__options > div{
+    border:2px solid var(--header);
+    padding:14px;
+    width:400px;
+    
+}
+
+.game__options > div:hover{
+    cursor:pointer;
+    background-color:var(--header);
+    transition:all .5s ease-in;
+}
+
+.game__controls{
+    display:flex;
+    justify-content:center;
+}
+.game__controls > button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:orange;
+    font-size:1.5rem;
+    border-radius:5px;
+}
+
+.game__controls > button:hover{
+    background:transparent;
+    cursor:pointer;
+    color:white;
+    border:2px solid white;
+}
+.game__score{
+    text-align: center;
+    margin-bottom:15px;
+    margin-top:100px
+}
+@media(max-width:830px){
+    .game__options{
+        display:grid;
+        grid-template-areas:"opt1"
+                            "opt2"
+                            "opt3"
+                            "opt4";
+        gap:10px;   
+    }
+   .game__questions{
+       width:400px;
+       margin-top:100px;
+       font-size:.9rem;
+       font-weight:500;
+   }
+   .game__questions > h3{
+       font-weight:600;
+   }
+   .game__controls{
+       padding-bottom:30px;
+   }
+   .game__options{
+       font-size:1rem;
+   }
+   .game__controls > button{
+       padding:8px 10px;
+       font-size:1rem;
+   }
+    .main{
+        overflow:scroll;
+    }  
+}
+
+@media(max-width:440px){
+    
+    .game__options > div{
+        width:90vw;
+    }
+    .game__questions{
+        width:90vw;
+    }
+}

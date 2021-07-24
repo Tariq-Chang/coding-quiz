@@ -1,0 +1,50 @@
+
+.endingPage__container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+    font-size:22px;
+    background:var(--body);
+    color:white;
+}
+.endingPage__container > h1{
+    padding:10px;
+    font-size:60px;
+    margin-bottom:10px;
+}
+.endingPage__container > table{
+    width:50%;
+    margin-bottom:100px;
+}
+.endingPage__container > button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:orange;
+    font-size:1.5rem;
+    border-radius:5px;
+}
+.endingPage__container > button:hover{
+    background:transparent;
+    cursor:pointer;
+    color:white;
+    border:2px solid white;
+}
+tr > td{
+    border:1px solid var(--header);
+    padding:10px;
+}
+
+tr > :first-child{
+    font-weight: 500;
+    font-size:24px;
+}
+
+@media(max-width:830px){
+    .endingPage__container > table{
+        width:90%;
+    }
+}
+
