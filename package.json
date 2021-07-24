@@ -2,7 +2,7 @@
   "name": "quiz-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Tariq-Hussain.github.io/coding-quiz",
+  "homepage": "https://Tariq-Hussain.github.io/coding-quiz",
   "dependencies": {
     "@material-ui/icons": "^4.11.2",
     "@reduxjs/toolkit": "^1.5.1",

@@ -22,10 +22,8 @@
     background:rgb(195,195,195);
     color:var(--header);
     width:810px;
-    /* max-width:60vw; */
     margin:20px 50px;
     padding:10px;
-    /* min-width:400px; */
 }
 
 .game__options{
